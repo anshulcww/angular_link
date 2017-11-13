@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ui.router']);
+var myApp = angular.module('myApp', ['ui.router', 'ngAnimate']);
 
 myApp.config(function($stateProvider, $urlRouterProvider,$locationProvider){
 
@@ -7,13 +7,15 @@ myApp.config(function($stateProvider, $urlRouterProvider,$locationProvider){
 	$stateProvider
 	.state('home',{
 		url: "/home",
-/*      	controller: 'HomeCtrl',
+/*      	
 */      views: {
 			"header" :{templateUrl: "templates/header.html"},
 			"app":{
 						templateUrl: "templates/home.html",
+						controller: 'HomeCtrl'
 		      	}
 			}
+			
 	})
 	.state('about',{
 		url: "/about",
