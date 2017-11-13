@@ -1,3 +1,10 @@
 <div class="container">
-	<h2 class="fade">About</h2>
+	<h2>ToDos...</h2>
+	<div class="todobox">
+		<form ng-submit	= "toDoList()">
+			<input type="text" name="list" ng-model="user.l">
+			<input type="submit" value="add new">
+		</form>
+		<div ng-repeat = "value in values track by $index">{{value}}</div>
+	</div>
 </div>

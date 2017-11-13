@@ -8,3 +8,11 @@ myApp.controller('HomeCtrl', function($scope, $state){
 		console.log($scope.user);
 	}
 })
+
+.controller('AboutCtrl', function($scope,$state){
+	$scope.values = [];
+	$scope.toDoList = function(){
+		console.log($scope.user);
+		 $scope.values.push($scope.user.l);
+	}
+})

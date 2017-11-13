@@ -23,6 +23,7 @@ myApp.config(function($stateProvider, $urlRouterProvider,$locationProvider){
 			"header" :{templateUrl: "templates/header.html"},
 			"app":{
 						templateUrl: "templates/about.html",
+						controller: 'AboutCtrl'
 		      	}
 			}
 /*      	controller: 'AboutCtrl'
