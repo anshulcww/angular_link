@@ -1,10 +1,21 @@
+
 <div class="container">
 	<h2>ToDos...</h2>
+	<br>
+	<hr>
 	<div class="todobox">
 		<form ng-submit	= "toDoList()">
-			<input type="text" name="list" ng-model="user.l">
+			<input id="inp" type="text" name="list" ng-model="user.l">
 			<input type="submit" value="add new">
 		</form>
-		<div ng-repeat = "value in values track by $index">{{value}}</div>
+		<div id="main" ng-repeat = "value in values track by $index" >
+		<input type="checkbox" class="toggle"  ng-click= "checkList($index)"  ng-model= "check">
+		<span>{{$index}}--------------</span>
+
+		<h3 ng-class="{'done-true': check, done:true}">{{value}}</h3>
+		
+	
+	<input type="submit" value="remove" ng-click= "removeList($index)">
+	</div>
 	</div>
 </div>
