@@ -26,8 +26,6 @@ myApp.config(function($stateProvider, $urlRouterProvider,$locationProvider){
 						controller: 'AboutCtrl'
 		      	}
 			}
-/*      	controller: 'AboutCtrl'
-*/
 	})
 	.state('work',{
 		url: "/",
@@ -37,9 +35,6 @@ myApp.config(function($stateProvider, $urlRouterProvider,$locationProvider){
 					templateUrl: "templates/work.html",
 	      	}
 		}
-
-/*      	controller: 'HomeCtrl'
-*/
 	})
 	.state('product',{
 		url: "/",
@@ -49,8 +44,5 @@ myApp.config(function($stateProvider, $urlRouterProvider,$locationProvider){
 						templateUrl: "templates/product.html",
 		      	}
 			}
-
-/*      	controller: 'ProductCtrl'
-*/
 	});
 });

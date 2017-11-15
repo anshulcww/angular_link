@@ -21,31 +21,80 @@
 	 	src:url("Roboto/Roboto-Bold.ttf") format("truetype");
 		font-weight: 900;
 	}
-	h2{
-		font-family: 'class';
-		font-weight: 900;
-	}
 	.container{
 		display: flex;
 		flex-direction: column;
-		margin-top: 100px;
-		height:300px;
 		width: 300px;
-		background-color: grey;
-    	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+		height: 350px;
+		margin: 50px auto;
+		border-radius: 20px;
+		border: solid 8px #2c3033;
+		background: white;
+		box-shadow: 0 0 0px 1px rgba(255,255,255,.4),
+							0 0 0px 3px #2c3033;
+	}
+	.header1{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		height: 50px;
+		border-radius: 10px 10px 0 0px;
+		color: black;
+		box-shadow: inset 0 -2px 3px 2px rgba(0,0,0,.4),
+							0 2px 2px 2px rgba(0,0,0,.4);
+	    font-family: 'class', Roboto-Bold;
+		font-weight: 900;
+		align-items: center;
+	}
+	#sub{
+		text-align: center;
+		font-weight: bold;
+		color:#fff;
+		text-decoration: none;
+		background-color: #429000;
+		border-radius: 10px;
+		border: 5px solid #429000;
+		box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.15);
 	}
 	#inp{
-	    background: rgba(0, 0, 0, 0.003);
-	    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
-		font-family: 'class';
+		font-family: 'class', Roboto-Bold;
 		font-weight: 700;
-	}
-	.done-true {
-	  text-decoration: line-through;
-	  color: red;
+ 	   	box-shadow:inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    	padding: 15px;
 	}
 	#main{
+		    display:flex;
+		    flex-direction:row;
+		    justify-content: space-between;
 		    border-top: 1px solid #e6e6e6;
+		    box-shadow:inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+            height:50px;
+	}
+	input[type="checkbox"] {
+		margin: 20px;
+	}
+	#rem{
+	    font-family: 'class', Roboto-Bold;
+		font-weight: 700;
+		margin: 20px;
+		width:10px;
+		}
+		
+	#todo{
+		padding-top: 15px;
+		margin: 0px;
+		font-family: 'class', Roboto-regular;
+		font-weight: 400;
+	}
+	.todobox{
+		box-shadow: inset 0 0px 5px black;
+		border-radius: 0 0 10px 10px;
+	}
+	.done-true {
+		text-decoration: line-through;
+		color: red;
 	}
 	.fade.ng-enter {
 		  transition: 2s appear;
@@ -73,10 +122,10 @@
 	}
 
 	.navigation a {
-		  text-decoration: none;
-		  display: block;
-		  padding: 1em;
-		  color: white;
+		text-decoration: none;
+		display: block;
+		padding: 1em;
+		color: white;
 	}
 
 	.navigation a:hover {
