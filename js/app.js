@@ -33,9 +33,12 @@ myApp.config(function($stateProvider, $urlRouterProvider,$locationProvider){
 		"header" :{templateUrl: "templates/header.html"},
 		"app":{
 					templateUrl: "templates/work.html",
+					controller: "WorkCtrl"
 	      	}
 		}
+
 	})
+
 	.state('product',{
 		url: "/",
 		views: {

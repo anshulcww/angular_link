@@ -26,3 +26,21 @@ myApp.controller('HomeCtrl', function($scope, $state){
 		 
 	}
 })
+
+.controller('WorkCtrl',function($scope, $state){
+	$scope.employer = [
+	{name: "Anshul" ,uname: "@anshul" , email: "Anshul@gmail.com", id: "123"},
+	{name: "Anshul1" ,uname: "@anshul1" , email: "Anshul1@gmail.com", id: "123"},
+	{name: "Anshul2" ,uname: "@anshul2" , email: "Anshul2@gmail.com", id: "124"},
+	{name: "Anshul3" ,uname: "@anshul3" , email: "Anshul3@gmail.com", id: "125"}
+	];
+
+	$scope.modal= function(index){
+		console.log(index);
+		$scope.info = true;
+		$scope.index = index;
+	}
+	$scope.cancel=function(){
+		$scope.info= false;
+	}
+})

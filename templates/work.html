@@ -1,3 +1,41 @@
-<div class="container">
-	<h1 class="fade">Work</h1>
+<div class="container" >
+	<div class="info">
+		Search
+	</div>
+	<div class="pa4">
+  <div class="overflow-auto">
+    <table class="f6 w-100 mw8 center" cellspacing="0">
+      <thead>
+        <tr class="stripe-dark" >
+          <th class="fw6 tl pa3 bg-white">Name</th>
+          <th class="fw6 tl pa3 bg-white">Username</th>
+          <th class="fw6 tl pa3 bg-white">Email</th>
+          <th class="fw6 tl pa3 bg-white">ID</th>
+        </tr>
+      </thead>
+      <tbody class="lh-copy" >
+        <tr class="stripe-dark" ng-repeat = "emp in employer track by $index" ng-click="modal($index)">
+          <td class="pa3">{{emp.name}}</td>
+          <td class="pa3">{{emp.uname}}</td>
+          <td class="pa3">{{emp.email}}</td>
+          <td class="pa3">{{emp.id}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+  </div>
+</div>
+    <div id="modalDialog" ng-if="info">
+      <div id="modal1">
+        <span>Name: {{employer[index].name}}</span><br />
+        <span>UserName: {{employer[index].uname}}</span><br />
+        <span>Email: {{employer[index].email}}</span><br />
+        <span>Id: {{employer[index].id}</span><br />
+        <button class="btn btn-default" type="button" ng-click="cancel()">ok</button>
+
+      </div>
+
+    </div>
+
 </div>
