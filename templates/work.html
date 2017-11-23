@@ -28,11 +28,11 @@
 </div>
     <div id="modalDialog" ng-if="info" ng-click="cancel()">
       <div id="modal1">
-        <span>Name: {{employer[index].name}}</span><br />
-        <span>UserName: {{employer[index].uname}}</span><br />
-        <span>Email: {{employer[index].email}}</span><br />
-        <span>Id: {{employer[index].id}</span><br />
-        <button class="btn btn-default" type="button" ng-click="cancel()">ok</button>
+        <div class="item" >Name: <span style="padding-left: 80px;">{{employer[index].name}}</span></div>
+        <div class="item">UserName: <span style="padding-left: 45px;">{{employer[index].uname}}</span></div>
+        <div class="item">Email: <span style="padding-left: 80px;">{{employer[index].email}}</span></div>
+        <div class="item">Id: <span style="padding-left: 105px;">{{employer[index].id}}</span></div>
+        <button class="btn btn-default" type="button" ng-click="cancel()" >X</button>
 
       </div>
 

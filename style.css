@@ -218,8 +218,7 @@
     }
     #modal1{
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
         font-family: 'class', Roboto-Bold;
         font-weight: 900;
         height:200px;
@@ -227,4 +226,21 @@
         background-color: grey;
         margin-top: 150px;
     }
-    
+    .item{
+        flex-grow: 2;
+        align-self: flex-start;
+      padding: 15px;
+      font-weight: bold;
+      text-align: left;
+      margin-left: 160px;
+    }
+    button{
+        display:flex;
+        background: transparent;
+        position:fixed;
+        left:950px;
+
+    }
+    span{
+        position: relative;
+    }
